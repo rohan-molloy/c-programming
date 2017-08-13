@@ -27,9 +27,12 @@ int main(int argc, char **argv)
 
 	value = (100*input[0]);
 
-	if(input[1] % 10 != 0) {
+	if(input[1] % 10 != 0) 
+	{
 			printf("cents not a multiple of 10 - omitting");
-	} else {
+	} 
+	else 
+	{
 			value += input[1];
 	}
 
@@ -37,14 +40,15 @@ int main(int argc, char **argv)
 	{
 		for(i = 5; i>=0 && num != value; i--)
 		{
-			if((num+vals[i]) > value) {
-					continue;
+			if((num+vals[i]) > value) 
+			{
+				continue;
 			}
 			num+=vals[i];
 			count++;
 			valcount[i]++;
 
-		}
+	 	}
 	}
 	printf("\nTOTAL COINS:%ld\tSUCCESS:%ld\n",count,(value==num));
 	printf("\n10c\t20c\t50c\t$1\t$2\n");
