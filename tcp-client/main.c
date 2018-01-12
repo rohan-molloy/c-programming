@@ -1,5 +1,3 @@
-// NWEN 243, Victoria University of Wellington. Author, Kris Bubendorfer.
-
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
